@@ -55,14 +55,13 @@ Physical devices integrated:
   In the “Automatic Mode”, the sensing system will run locally and automatically, which can be accessed by other devices through local network protocol. Under this mode, no specific inputs are expected from users. The indication devices and physical devices within the system will be powered depends on the real-time sensing data and decision functions. The design of the decision functions take several factors into consideration including seasonality, comfort level, etc.
 </p>
 </ul>
-<h3 id="problems-encountered">Experiment Expectations</h3>
-
+<h3 id="Expectations">Experiment Expectations</h3>
+<center>
 <figure>
-    <center>
     <img src="pics/setup.jpg" width = "400" height = "250" class="center">
     <figcaption> <strong>Figure 1:</strong> Experiment Setup </figcaption>
-    </center>
 </figure>
+</center>
 
 <ul>
  <p>
@@ -99,7 +98,7 @@ On the other hand, if the Automatic mode was chosen, the experiment is performed
 <figure>
     <center>
     <img src="pics/openChirp.png" width = "1100" height = "350" class="center">
-    <figcaption> <strong>Figure 6:</strong> OpenChirp IOT real time sensor data monitoring</figcaption>
+    <figcaption> <strong>Figure 2:</strong> OpenChirp IOT real time sensor data monitoring</figcaption>
     </center>
 </figure>
 <p>Under IOT mode, users can have a real time monitoring sensor data as shown in the figure 3.</p>
