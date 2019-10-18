@@ -56,12 +56,15 @@ Physical devices integrated:
 </p>
 </ul>
 <h3 id="Expectations">Experiment Expectations</h3>
-<center>
+<p align="center">
 <figure>
+  <center>
     <img src="pics/setup.jpg" width = "400" height = "250" class="center">
     <figcaption> <strong>Figure 1:</strong> Experiment Setup </figcaption>
+  </center>
 </figure>
-</center>
+</p>
+
 
 <ul>
  <p>
@@ -95,12 +98,14 @@ On the other hand, if the Automatic mode was chosen, the experiment is performed
 <p>
 <h3 id="problems-encountered">Result</h3>
 <ul>
+<p align="center">
 <figure>
     <center>
     <img src="pics/openChirp.png" width = "1100" height = "350" class="center">
     <figcaption> <strong>Figure 2:</strong> OpenChirp IOT real time sensor data monitoring</figcaption>
     </center>
 </figure>
+</p>
 <p>Under IOT mode, users can have a real time monitoring sensor data as shown in the figure 3.</p>
 <p>
   Under the automatic mode, the heat dissipation with fan uses 6s to cool down temperature and 15s without fan to cool down using room temperature. So there is a 60% effectiveness improvement when using the fan to reduce the temperature. Similarly, there is a 43% of  improvement to expel unsafe gas using the ventilation fan. Both precision and recall are mostly 100% to show the health condition of the temperature sensor.
