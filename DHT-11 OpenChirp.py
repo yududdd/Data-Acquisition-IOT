@@ -66,6 +66,8 @@ summer = False
 winter = False
 currentMonth = datetime.now().month
 
+# Assumption: month 4-9 is summer and rest is winter
+# changes should be made later
 if currentMonth < 10 and currentMonth > 3:
     summer = True
 else:
@@ -99,6 +101,7 @@ def main():
     askforchoice = input("How do you want to test? Self control over IOT or automatic? ")
 
     while True:
+        # read the sensor data.
         result = instance.read()
 
         # Update the sensor reading
@@ -131,11 +134,15 @@ def main():
                 smart_device.publish("openchirp/device/"+username+"/"+sensorT, payload=temp, qos=0, retain=True)
                 smart_device.publish("openchirp/device/"+username+"/"+sensorH, payload=hum, qos=0, retain=True)
 
+                # According to references, the comfortable temperature in winter
+                # is within [20, 23.5]
                 if winter:
                     if (temp < 20):
+                        # too cold
                         GPIO.output(blue_led, GPIO.HIGH)
                         GPIO.output(fan2, 1)
                     elif(temp > 23.5):
+                        # too hot
                         GPIO.output(red_led, GPIO.HIGH)
                         # fan2 0 is fan on
                         GPIO.output(fan2, 0)
